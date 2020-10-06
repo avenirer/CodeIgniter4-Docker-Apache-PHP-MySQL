@@ -25,7 +25,7 @@ services:
         restart: unless-stopped
         volumes: 
             - ./src:/var/www/html
-            - ./src/apache_log:/var/log/apache2
+            - ./apache_log:/var/log/apache2
         ports:
             - 80:80
         depends_on: 
